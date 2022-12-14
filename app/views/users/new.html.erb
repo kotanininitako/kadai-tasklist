@@ -9,18 +9,20 @@
   
   <div>
     <%= f.label :email, 'Email' %>
-    <%= f.text_field :email %>
+    <%= f.email_field :email %>
   </div>
   
   <div>
     <%= f.label :password, 'Password' %>
-    <%= f.text_field :password %>
+    <%= f.password_field :password %>
   </div>
   
   <div>
     <%= f.label :password_confirmation, 'Confirmation' %>
-    <%= f.text_field :password_confirmation %>
+    <%= f.password_field :password_confirmation %>
   </div>
   
   <%= f.submit 'Sign up' %>
 <% end %>
+
+<p>すでにアカウントをお持ちの方 <%= link_to 'ログイン', login_path %></p>
